@@ -1,4 +1,81 @@
+
+/* TOOD: install scss */
+
 .App {
+  color: #3d494b;
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px 40px;
+}
+
+.vine {
+  max-width: 900px;
+  opacity: .3;
+  position: fixed;
+  right: -400px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 768px) {
+  .App {
+    padding: 20px;
+  }
+}
+
+.container {
+  background-color: rgba(219, 213, 192, .3);
+  padding: 40px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+}
+
+.heading {
+  align-items: center;
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .heading {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.heading h1 {
+  font-size: 50px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.headshot {
+  flex: 0 0 auto;
+  align-items: flex-start;
+  background-color: white;
+  border-radius: 100%;
+  box-shadow: 0 0 1px #3d494b;
+  display: flex;
+  height: 160px;
+  justify-content: center;
+  overflow: hidden;
+  width: 160px;
+  margin-right: 20px;
+}
+
+.headshot img {
+  max-width: 80%;
+}
+
+
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +112,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
